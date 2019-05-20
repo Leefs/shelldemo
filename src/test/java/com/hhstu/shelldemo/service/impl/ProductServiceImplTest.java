@@ -44,7 +44,7 @@ public class ProductServiceImplTest {
     }
 
     @Test
-    @Transactional  //测试成功后测试数据回滚    不存入数据库中
+    @Transactional  //测试成功后测试数据回滚    不存入数据库中 1111
     public void save() {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId("DD3345");
