@@ -10,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.function.Predicate;
@@ -43,6 +44,7 @@ public class ProductServiceImplTest {
     }
 
     @Test
+    @Transactional  //测试成功后测试数据回滚    不存入数据库中
     public void save() {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId("DD3345");
