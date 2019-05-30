@@ -20,3 +20,10 @@ spring:
 server:
   context-path: /sell
 #      com.hhsth.shelldemo.LoggerTest: debug
+wechat:
+  mpAppId: wxdcxxxxxxxxx
+  mpAppSecret: xxxxxxxxx
+  mchId: xxxxxxxxx
+  mchKey:xxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: xxxxxxxxx/sell/pay/notify

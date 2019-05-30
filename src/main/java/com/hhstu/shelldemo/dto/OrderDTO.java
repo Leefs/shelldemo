@@ -1,14 +1,10 @@
 package com.hhstu.shelldemo.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.hhstu.shelldemo.dataobject.OrderDetail;
-import com.hhstu.shelldemo.enums.OrderStatusEnum;
-import com.hhstu.shelldemo.enums.PayStatusEnum;
 import com.hhstu.shelldemo.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
-import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
